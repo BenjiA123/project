@@ -33,6 +33,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   
   .upload-button {
@@ -52,10 +53,14 @@ body {
   .hidden {
     display: none;
   }
+  .image-preview{
+    height: 3.5rem;
+    position: relative;
+    text-align: center;
+  }
 
-  .image-preview #previewImage{
-    width: 10%;
-    height: 22rem;
+  .image-preview img{
+    width: 80%;
   }
 
   header {
@@ -115,7 +120,6 @@ body {
     margin: 1.2rem 5%;
     width: 80%;
     font-size: 0.75rem;
-    line-height: 1rem;
     transition: all 2 ease;
     color: rgb(0, 0, 0);
     text-align: left;
