@@ -86,17 +86,68 @@ body {
     line-height: 1.5rem;
     margin-bottom:3rem ;
   }
+
+  .brain_tumors{
+    margin: 2rem 2rem;
+  }
   .brain_tumors h2{
     text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 200;
   }
 
+  .cards{
+    display: flex;
+  }
+  .card {
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 15px 20px rgba(111, 196, 115, 0.5);
+    margin: 1.2rem 5%;
+    width: 80%;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    transition: all 2 ease;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 1.3rem;
+    border-radius: 0.75rem;
 
-  @media only screen and (max-width:700px) {
+
+  }
+
+  footer{
+    background-color: #45a049;
+    margin: 0;
+    
+  }
+  footer p {
+    color: white;
+    text-align: center;
+    font-size: .85rem;
+    font-weight: 200;
+    padding: 1.5rem;
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  @media only screen and (max-width:700px) {  
 
     .navbar{
       font-size: .85rem;
     }
-    
+    .cards{
+      flex-direction: column;
+    }
     header h1{
       font-size: 2rem;
       font-weight: 400;
