@@ -101,7 +101,9 @@ body {
     font-family: 'Poppins';
     font-size: 2rem;
     font-weight: 200;
+    margin-bottom: 0;
   }
+
 
   .cards{
     display: flex;
@@ -129,16 +131,53 @@ body {
 
   }
 
+  .cnn_braintumor{
+    text-align: center;
+    background-color: #45a049;
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+
+    color: white;
+  }
+
+  .cnn_braintumor h2{
+    line-height: 1.6rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+  }
+  .cnn_braintumor p{
+    font-family: 'Poppins';
+    font-size: .75rem;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .cnn_des{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem; 
+  }
+.cnn_des h1{
+  margin: 0;
+  /* background-color: white; */
+  /* padding: 0;width: 1.8rem; */
+  /* height: 1.8rem; */
+  text-align: center;
+  border-radius: 50%;
+  /* color: #45a049; */
+}
   footer{
     background-color: #45a049;
     margin: 0;
     
   }
   footer p {
-    color: white;
+    color: #45a049;
     text-align: center;
     font-size: .85rem;
-    font-weight: 200;
+    background-color: white;
+    font-weight: 300;
     padding: 1.5rem;
     text-transform: capitalize;
     margin: 0;
@@ -165,6 +204,11 @@ body {
     }
     .upload-button{
       text-align: left;
+    }
+
+    .cnn_des{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
     }
   }
   
