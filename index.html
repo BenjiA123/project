@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <title>Web Component</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        Brain Tumor Prediction application
+    </nav>
+  
+    <div class="container">
+      <h1>Test and Evaluate Your MRI Scans</h1>
+      <p>Detect brain tumors early, save lives, and experience accurate diagnoses with our advanced brain tumor detection application</p>
+        <div class="center">
+            <div class="image-preview hidden">
+              <img id="previewImage" src="#" alt="Image Preview">
+            </div>
+          <button id="uploadButton" class="upload-button">Upload Image</button>
+          <input id="fileInput" type="file" class="hidden">
+        </div>
+      </div>
+    </header>
+
+    <section class="brain_tumors">
+      <h2>What is a brain tumor</h2>
+
+    </section>
+  
+    <script>
+     function handleFileUpload(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      
+      // Set the preview image source when the file is loaded
+      reader.onload = function(e) {
+        const previewImage = document.getElementById('previewImage');
+        previewImage.src = e.target.result;
+      };
+      
+      // Read the file as a data URL
+      reader.readAsDataURL(file);
+      
+      // Show the image preview
+      const imagePreview = document.querySelector('.image-preview');
+      imagePreview.classList.remove('hidden');
+      
+      console.log('Uploaded file:', file);
+    }
+    
+    // Add event listener to the file input
+    const fileInput = document.getElementById('fileInput');
+    fileInput.addEventListener('change', handleFileUpload);
+    
+    // Trigger file input click when the upload button is clicked
+    const uploadButton = document.getElementById('uploadButton');
+    uploadButton.addEventListener('click', function() {
+      fileInput.click();
+    });
+    </script>
+</body>
+</html>
