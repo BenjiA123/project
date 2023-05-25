@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
-    <title>Web Component</title>
+    <title>Brain Tumor Detection Application</title>
 </head>
 <body>
     <header>
@@ -19,12 +19,9 @@
     <div class="container">
       <h1>Test and Evaluate Your MRI Scans</h1>
       <p>Detect brain tumors early, save lives, and experience accurate diagnoses with our advanced brain tumor detection application</p>
-        <div class="center">
-          <button id="uploadButton" class="upload-button">Upload Image</button><br>
-          <input id="fileInput" type="file" class="hidden"><br>
-          <div class="image-preview hidden">
-            <img id="previewImage" src="#" alt="Image Preview">
-          </div>
+        <!-- <div class="center" > -->
+          <a style="text-decoration: none;" href="#upload_img_section" class="upload-button">Upload Image</a><br>
+          <!-- </div>  -->
         </div>
       </div>
     </header>
@@ -85,6 +82,16 @@
          </div>
       
       </div>
+    </section>
+    <section id="upload_img_section" class="upload_img_section">
+      <h2>Upload MRI scan to pridict</h2>
+      <!-- <div class="center"> -->
+        <button id="uploadButton" class="upload-button">Upload Image</button><br>
+        <input id="fileInput" type="file" class="hidden"><br>
+        <div class="image-preview hidden">
+          <img id="previewImage" src="#" alt="Image Preview">
+        </div>
+      <!-- </div> -->
     </section>
 
     <footer>

@@ -37,13 +37,22 @@ body {
   }
   
   .upload-button {
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: .75rem;
+    font-size: 1rem;
     background-color: #4CAF50;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+  .upload_img_section{
+    text-align: center;
+    padding: 2rem;
+
+  }
+
+  .upload_img_section h2{
+    text-align: center;
   }
   
   .upload-button:hover {
@@ -95,7 +104,7 @@ body {
   .brain_tumors{
     margin: 2rem 2rem;
   }
-  .brain_tumors h2{
+  .brain_tumors h2, .upload_img_section h2{
     text-align: center;
     text-transform: uppercase;
     font-family: 'Poppins';
@@ -120,7 +129,6 @@ body {
     text-align: center;
     box-shadow: 0 15px 20px rgba(111, 196, 115, 0.5);
     margin: 1.2rem 5%;
-    width: 80%;
     font-size: 0.75rem;
     transition: all 2 ease;
     color: rgb(0, 0, 0);
@@ -173,10 +181,10 @@ body {
     
   }
   footer p {
-    color: #45a049;
+    color: #fff;
     text-align: center;
     font-size: .85rem;
-    background-color: white;
+    background-color: #45a049;
     font-weight: 300;
     padding: 1.5rem;
     text-transform: capitalize;
